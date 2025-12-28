@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <title>Discover AI Power</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <h1>Discover AI Power</h1>
-  <p>Frontend is live.</p>
+  <h1>🚀 Discover AI Power</h1>
+  <p>Status: <strong id="status">Checking backend...</strong></p>
+
+  <script>
+    const API_URL = "https://discover-ai-power.onrender.com";
+
+    async function checkBackend() {
+      try {
+        const res = await fetch(`${API_URL}/`);
+        const text = await res.text();
+        document.getElementById("status").innerText = text;
+      } catch (error) {
+        document.getElementById("status").innerText = "❌ Backend not reachable";
+        console.error(error);
+      }
+    }
+
+    checkBackend(); // AUTO RUN
+  </script>
 </body>
 </html>
+
