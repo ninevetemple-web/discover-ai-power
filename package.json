@@ -4,10 +4,9 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js"
-  },
-  "engines": {
+  } "engines": {
     "node": ">=18"
-  },
+  }
   "dependencies": {
     "express": "^4.19.2",
     "cors": "^2.8.5",
@@ -18,11 +17,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-  }
-  "dependencies": {
+  } "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
+  }
   "devDependencies": {
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0"
