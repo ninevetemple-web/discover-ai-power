@@ -13,7 +13,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5"
   }
-}{
+{
   "name": "discover-ai-power",
   "version": "1.0.0",
   "scripts": {
@@ -30,6 +30,3 @@
     "@vitejs/plugin-react": "^4.0.0"
   }
 }
-
-    
-
